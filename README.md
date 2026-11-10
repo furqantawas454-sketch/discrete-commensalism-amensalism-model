@@ -95,7 +95,7 @@ The scripts can also be opened and evaluated in a Mathematica notebook front end
 
 ## Numerical settings
 
-Bifurcation diagrams use 1400 parameter values, start from E4 + (0.01, 0.01, 0.01), discard 3000–4000
+Bifurcation diagrams use 1200–1400 parameter values, start from E4 + (0.01, 0.01, 0.01), discard 3000–4000
 transient iterates and plot the next 250–300. Maximal Lyapunov exponents are computed by the
 tangent-vector method, averaged over 5000–6000 iterates. Orbits that leave the positive octant are
 discarded, and each diagram is cut where this first happens.

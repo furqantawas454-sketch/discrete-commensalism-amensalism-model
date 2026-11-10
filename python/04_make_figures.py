@@ -53,7 +53,7 @@ def mle_panel(ax, hs, lam, hcrit, label_crit, xlabel=r"$h$"):
 
 
 def save(fig, name):
-    fig.savefig(OUT + name + ".pdf", bbox_inches="tight")
+    fig.savefig(OUT + name + ".pdf", bbox_inches="tight", metadata={"CreationDate": None})
     fig.savefig(OUT + name + ".png", bbox_inches="tight", dpi=170)
     plt.close(fig)
 
@@ -62,9 +62,9 @@ summary = {}
 
 # ---------------- Figure 1: Example 8.1, flip in the y-direction ------------------
 f, X0 = start(P1)
-hs = np.linspace(0.95, 1.52, 1400)
+hs = np.linspace(0.95, 1.508, 1400)
 X, Y, Z, alive = M.bifurcation(P1, hs, X0, n_trans=3000, n_keep=250)
-hl = np.linspace(0.95, 1.52, 500); lam = M.mle(P1, hl, X0, 3000, 5000)
+hl = np.linspace(0.95, 1.508, 500); lam = M.mle(P1, hl, X0, 3000, 5000)
 fig, axs = plt.subplots(1, 2, figsize=(7.2, 2.7))
 bif_panel(axs[0], hs, Y, CY, r"$y$", f["hF"], r"$h_F$")
 mle_panel(axs[1], hl, lam, f["hF"], r"$h_F$")
