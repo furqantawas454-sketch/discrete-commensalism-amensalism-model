@@ -1,0 +1,34 @@
+00_model.wl loaded: examples {Example 8.1, Example 8.2, Example 8.3}
+
+=== (a) Symbolic checks for Section 5 ===
+J12 == 0 and J32 == 0: True
+Characteristic polynomial factors as in (5.2): True
+trace(A) == -(b1 x* + beta z*/x* + a3/x*): True
+det(A) == a3 b1 + 2 a3 beta z*/x*^2: True
+J22(E4) == 1 - h rho4: True
+Eigenvalues at E1: {1 - a1 h, 1 + a3 b1 h/a1, (b1 + a2 b1 h + a1 (c h + m + a2 h m))/(b1 + a1 m)}
+                   [the last one equals 1 + h (a2 + c a1/(m a1 + b1))]
+Roots of F(-1) in h: {{hh -> (-TT - Sqrt[-4 DD + TT^2])/DD}, {hh -> (-TT + Sqrt[-4 DD + TT^2])/DD}}
+
+=== (b) Stability thresholds of the examples ===
+
+Example 8.1
+  T = -1.78889,  D = 0.61081,  T^2-4D = 0.756896,  T^2/D = 5.23917
+  h* = 1.50439,  rho4 = 1.87649,  2/rho4 = 1.06582,  h_E4 = 1.06582
+  E4 loses stability through: flip in y-direction
+  |eigenvalues| at 0.98 h_E4: {0.38861, 0.5201, 0.96}  (all < 1: sink)
+  |eigenvalues| at 1.02 h_E4: {0.44529, 0.50052, 1.04}  (one > 1: unstable)
+
+Example 8.2
+  T = -4.2968,  D = 2.66942,  T^2-4D = 7.78485,  T^2/D = 6.91631
+  h* = 0.564419,  rho4 = 1.72828,  2/rho4 = 1.15722,  h_E4 = 0.564419
+  E4 loses stability through: flip in (x,z)-block
+  |eigenvalues| at 0.98 h_E4: {0.044038, 0.58331, 0.96}  (all < 1: sink)
+  |eigenvalues| at 1.02 h_E4: {0.0050193, 0.5663, 1.04}  (one > 1: unstable)
+
+Example 8.3
+  T = -4.66641,  D = 5.97786,  T^2-4D = -2.13608,  T^2/D = 3.64267
+  h* = 0.780615,  rho4 = 0.778506,  2/rho4 = 2.56902,  h_E4 = 0.780615
+  E4 loses stability through: Neimark-Sacker
+  |eigenvalues| at 0.98 h_E4: {0.40444, 0.96364, 0.96364}  (all < 1: sink)
+  |eigenvalues| at 1.02 h_E4: {0.38013, 1.0365, 1.0365}  (one > 1: unstable)

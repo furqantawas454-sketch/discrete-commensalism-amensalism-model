@@ -1,0 +1,21 @@
+00_model.wl loaded: examples {Example 8.1, Example 8.2, Example 8.3}
+
+=== (a) Lemma 7.1 ===
+B G(X) + (1-B) X == X + (B h) F(X): True
+
+=== (b) Control of the three examples ===
+
+Example 8.1  (h = 1.4)
+  B* = h_E4/h = 0.761301
+  B = B* - 0.02: |eig J_B(E4)| = {0.37973, 0.52318, 0.94746},  distance of orbit from E4 after 20000 steps = 1.07*10^-14
+  B = B* + 0.02: |eig J_B(E4)| = {0.45418, 0.49745, 1.0525},  distance of orbit from E4 after 20000 steps = 0.4718
+
+Example 8.2  (h = 0.74)
+  B* = h_E4/h = 0.762728
+  B = B* - 0.02: |eig J_B(E4)| = {0.050107, 0.58595, 0.94756},  distance of orbit from E4 after 20000 steps = 7.13*10^-15
+  B = B* + 0.02: |eig J_B(E4)| = {0.0010498, 0.56365, 1.0524},  distance of orbit from E4 after 20000 steps = 0.3716
+
+Example 8.3  (h = 0.91)
+  B* = h_E4/h = 0.857819
+  B = B* - 0.02: |eig J_B(E4)| = {0.40646, 0.95763, 0.95763},  distance of orbit from E4 after 20000 steps = 1.82*10^-15
+  B = B* + 0.02: |eig J_B(E4)| = {0.37812, 1.0425, 1.0425},  distance of orbit from E4 after 20000 steps = 0.1371

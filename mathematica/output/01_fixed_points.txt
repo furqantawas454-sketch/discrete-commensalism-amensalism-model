@@ -1,0 +1,26 @@
+00_model.wl loaded: examples {Example 8.1, Example 8.2, Example 8.3}
+
+=== (a) Symbolic checks for Theorem 4.1 ===
+G(X) - X == h F(X): True
+E2 quadratic matches Eq. (4.4): True
+Cubic phi(x) matches Eq. (4.2): True
+Discriminant of x^3 - p x^2 - q: -(qq (4 pp^3 + 27 qq))
+E4 quadratic matches Eq. (4.7): True
+C == (m x* + 1) Delta: True
+
+=== (b) Fixed points of the three examples ===
+
+Example 8.1   Delta = 2.20736
+  E1 = {2., 0., 0.}   E2 = {2., 4.02124, 0.}
+  E3 = {2.14033, 0., 0.600708}   E4 = {2.14033, 3.45053, 0.600708}
+  formulas agree with direct NSolve: True
+
+Example 8.2   Delta = 1.85037
+  E1 = {2., 0., 0.}   E2 = {2., 3.84429, 0.}
+  E3 = {2.20557, 0., 3.40048}   E4 = {2.20557, 2.8362, 3.40048}
+  formulas agree with direct NSolve: True
+
+Example 8.3   Delta = 1.51773
+  E1 = {0.666667, 0., 0.}   E2 = {0.666667, 3.6222, 0.}
+  E3 = {0.797645, 0., 0.626845}   E4 = {0.797645, 2.62876, 0.626845}
+  formulas agree with direct NSolve: True

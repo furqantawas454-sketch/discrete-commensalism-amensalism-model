@@ -1,0 +1,38 @@
+
+Example 8.1  (h = 1.4)
+    [PASS] Lemma 7.1: B G(X) + (1-B) X == G_{Bh}(X)
+  MLE of the uncontrolled system = 0.228
+    [PASS] uncontrolled system is chaotic (MLE > 0)
+  B* = h_E4 / h = 1.06582 / 1.4 = 0.7613
+    [PASS] B* matches the paper (0.7613)
+  B = B* -0.02: |eig J_B(E4)| = [0.3797 0.5232 0.9475], distance from E4 after 20000 steps = 9.95e-15
+    [PASS] E4 stabilized for B < B*
+  B = B* +0.02: |eig J_B(E4)| = [0.4542 0.4974 1.0525], distance from E4 after 20000 steps = 4.72e-01
+    [PASS] E4 not stabilized for B > B*
+  with B = 0.7 (used in the figure) the orbit reaches E4 within 1e-4 after 24 iterations
+
+Example 8.2  (h = 0.74)
+    [PASS] Lemma 7.1: B G(X) + (1-B) X == G_{Bh}(X)
+  MLE of the uncontrolled system = 0.312
+    [PASS] uncontrolled system is chaotic (MLE > 0)
+  B* = h_E4 / h = 0.56442 / 0.74 = 0.7627
+    [PASS] B* matches the paper (0.7627)
+  B = B* -0.02: |eig J_B(E4)| = [0.0501 0.586  0.9476], distance from E4 after 20000 steps = 7.24e-15
+    [PASS] E4 stabilized for B < B*
+  B = B* +0.02: |eig J_B(E4)| = [1.0000e-03 5.6370e-01 1.0524e+00], distance from E4 after 20000 steps = 3.72e-01
+    [PASS] E4 not stabilized for B > B*
+  with B = 0.7 (used in the figure) the orbit reaches E4 within 1e-4 after 27 iterations
+
+Example 8.3  (h = 0.91)
+    [PASS] Lemma 7.1: B G(X) + (1-B) X == G_{Bh}(X)
+  MLE of the uncontrolled system = 0.223
+    [PASS] uncontrolled system is chaotic (MLE > 0)
+  B* = h_E4 / h = 0.78062 / 0.91 = 0.8578
+    [PASS] B* matches the paper (0.8578)
+  B = B* -0.02: |eig J_B(E4)| = [0.4065 0.9576 0.9576], distance from E4 after 20000 steps = 3.35e-15
+    [PASS] E4 stabilized for B < B*
+  B = B* +0.02: |eig J_B(E4)| = [0.3781 1.0425 1.0425], distance from E4 after 20000 steps = 1.37e-01
+    [PASS] E4 not stabilized for B > B*
+  with B = 0.8 (used in the figure) the orbit reaches E4 within 1e-4 after 38 iterations
+
+Summary: 15 checks passed, 0 failed.

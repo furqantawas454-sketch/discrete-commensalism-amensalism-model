@@ -1,0 +1,51 @@
+00_model.wl loaded: examples {Example 8.1, Example 8.2, Example 8.3}
+
+=== (a) Symbolic check of the y-flip coefficients (6.7) ===
+g'(y*) == 1 - h rho4: True
+a == g''(y*)/2 matches (6.7): True
+b == g'''(y*)/6 matches (6.7): True
+b == h K n^2 Q / S^4  (hence b > 0): True
+
+=== (b) Validation of (6.10) on the delayed logistic map ===
+(x,y) -> (y, 2 y (1 - x)) at (1/2,1/2): l_NS = -1.   (negative = supercritical, as known)
+
+=== (c) Conditions of Theorems 6.1-6.3 ===
+
+Example 8.1 (Theorem 6.1, flip in y-direction):
+  h* = 1.50439  (must exceed hF)
+  hF = 1.06582
+  a = -0.518302
+  b = 0.0106624
+  lF = 0.279299
+  eig M at hF = {0.510311, -0.416951}
+  dg'/dh = -1.87649
+
+Example 8.2 (Theorem 6.2, flip in (x,z)-block):
+  hF = 1.15722  (must exceed h1)
+  h1 = 0.564419
+  eig M at h1 = {-1., 0.574803}
+  lambda_y at h1 = 0.0245287
+  mu1 (transversality) = -3.54347
+  lB = 0.580497
+
+Example 8.3 (Theorem 6.3, Neimark-Sacker):
+  hF = 2.56902  (must exceed hNS)
+  hNS = 0.780615
+  eig M at hNS = {-0.821334 + 0.570448 I, -0.821334 - 0.570448 I}
+  |lambda| = {1., 1.}
+  theta0 = 2.53454
+  T^2/D (must differ from 2 and 3) = 3.64267
+  d|lambda|/dh = -T/2 = 2.3332
+  lambda_y at hNS = 0.392287
+  lNS = -10.3262
+
+Remark 9 (subcritical Neimark-Sacker):
+  hF = 0.923898
+  hNS = 0.327189
+  eig M at hNS = {-0.355544 + 0.934659 I, -0.355544 - 0.934659 I}
+  |lambda| = {1., 1.}
+  theta0 = 1.93429
+  T^2/D (must differ from 2 and 3) = 2.71109
+  d|lambda|/dh = -T/2 = 4.143
+  lambda_y at hNS = 0.29172
+  lNS = 0.00104419

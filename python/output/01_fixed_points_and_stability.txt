@@ -1,0 +1,74 @@
+
+Example 8.1
+  E1 = (2.0000, 0.0000, 0.0000)   residual |F(E)| = 0.0e+00
+    [PASS] E1 is a fixed point
+  E2 = (2.0000, 4.0212, 0.0000)   residual |F(E)| = 1.8e-15
+    [PASS] E2 is a fixed point
+  E3 = (2.1403, 0.0000, 0.6007)   residual |F(E)| = 2.3e-15
+    [PASS] E3 is a fixed point
+  E4 = (2.1403, 3.4505, 0.6007)   residual |F(E)| = 2.3e-15
+    [PASS] E4 is a fixed point
+  Delta = 2.2074  (> 0, so E4 exists)
+  T = -1.7889, D = 0.6108, T^2-4D = 0.7569, h* = 1.50439, rho4 = 1.8765, 2/rho4 = 1.06582, h_E4 = 1.06582
+  E4 loses stability through: flip in y-direction
+    [PASS] E4 matches the paper
+    [PASS] Delta matches the paper
+    [PASS] T matches the paper
+    [PASS] D matches the paper
+    [PASS] hstar matches the paper
+    [PASS] rho4 matches the paper
+    [PASS] hF matches the paper
+  |eig J(E4)| at 0.98 h_E4: [0.38861 0.5201  0.96   ]
+  |eig J(E4)| at 1.02 h_E4: [0.44529 0.50052 1.04   ]
+    [PASS] E4 is a sink just below h_E4
+    [PASS] E4 is unstable just above h_E4
+
+Example 8.2
+  E1 = (2.0000, 0.0000, 0.0000)   residual |F(E)| = 0.0e+00
+    [PASS] E1 is a fixed point
+  E2 = (2.0000, 3.8443, 0.0000)   residual |F(E)| = 4.3e-16
+    [PASS] E2 is a fixed point
+  E3 = (2.2056, 0.0000, 3.4005)   residual |F(E)| = 3.8e-15
+    [PASS] E3 is a fixed point
+  E4 = (2.2056, 2.8362, 3.4005)   residual |F(E)| = 3.8e-15
+    [PASS] E4 is a fixed point
+  Delta = 1.8504  (> 0, so E4 exists)
+  T = -4.2968, D = 2.6694, T^2-4D = 7.7848, h* = 0.56442, rho4 = 1.7283, 2/rho4 = 1.15722, h_E4 = 0.56442
+  E4 loses stability through: flip in (x,z)-block
+    [PASS] E4 matches the paper
+    [PASS] Delta matches the paper
+    [PASS] T matches the paper
+    [PASS] D matches the paper
+    [PASS] hstar matches the paper
+    [PASS] rho4 matches the paper
+    [PASS] hF matches the paper
+  |eig J(E4)| at 0.98 h_E4: [0.04404 0.58331 0.96   ]
+  |eig J(E4)| at 1.02 h_E4: [0.00502 0.5663  1.04   ]
+    [PASS] E4 is a sink just below h_E4
+    [PASS] E4 is unstable just above h_E4
+
+Example 8.3
+  E1 = (0.6667, 0.0000, 0.0000)   residual |F(E)| = 0.0e+00
+    [PASS] E1 is a fixed point
+  E2 = (0.6667, 3.6222, 0.0000)   residual |F(E)| = 2.0e-16
+    [PASS] E2 is a fixed point
+  E3 = (0.7976, 0.0000, 0.6268)   residual |F(E)| = 1.1e-15
+    [PASS] E3 is a fixed point
+  E4 = (0.7976, 2.6288, 0.6268)   residual |F(E)| = 1.1e-15
+    [PASS] E4 is a fixed point
+  Delta = 1.5177  (> 0, so E4 exists)
+  T = -4.6664, D = 5.9779, T^2-4D = -2.1361, h* = 0.78062, rho4 = 0.7785, 2/rho4 = 2.56902, h_E4 = 0.78062
+  E4 loses stability through: Neimark-Sacker
+    [PASS] E4 matches the paper
+    [PASS] Delta matches the paper
+    [PASS] T matches the paper
+    [PASS] D matches the paper
+    [PASS] hstar matches the paper
+    [PASS] rho4 matches the paper
+    [PASS] hF matches the paper
+  |eig J(E4)| at 0.98 h_E4: [0.40444 0.96364 0.96364]
+  |eig J(E4)| at 1.02 h_E4: [0.38013 1.03649 1.03649]
+    [PASS] E4 is a sink just below h_E4
+    [PASS] E4 is unstable just above h_E4
+
+Summary: 39 checks passed, 0 failed.

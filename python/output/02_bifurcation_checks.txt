@@ -1,0 +1,46 @@
+Validation: delayed logistic map (x,y) -> (y, 2y(1-x)) at (1/2,1/2)
+  l_NS = -1.0000
+    [PASS] known supercritical case gives l_NS < 0
+
+Example 8.1 (Theorem 6.1)
+  hF = 1.06582, h* = 1.50439, a = -0.5183, b = 0.0107, l_F = 0.2793
+    [PASS] hF < h*
+    [PASS] b > 0 and l_F > 0 (supercritical)
+    [PASS] l_F matches the paper (0.2793)
+  period-two orbit at hF + 0.01: [[2.1403, 3.1761, 0.6007], [2.1403, 3.6905, 0.6007]]
+  half-width 0.2572, normal-form prediction 0.2592
+    [PASS] only y changes on the period-two orbit
+    [PASS] half-width agrees with the prediction to 0.005
+  max |x - x*|, |z - z*| on the attractor for h in [1.07, 1.50]: 1.7e-10
+    [PASS] cascade stays on the invariant line x = x*, z = z*
+  periods: {1.25: 2, 1.31: 4, 1.355: 8, 1.3925: 6}
+    [PASS] periods 2, 4, 8 and the period-6 window
+
+Example 8.2 (Theorem 6.2)
+  h1 = 0.56442, hF = 1.15722, eig M(h1) = [-1.      0.5748], lambda_y = 0.0245, l_B = 0.5805
+    [PASS] h1 < hF
+    [PASS] l_B > 0 (supercritical) and matches the paper (0.5805)
+  period-two orbit at h1 + 0.01: [[1.9578, 2.907, 3.3661], [2.4157, 2.6826, 3.5458]]
+    [PASS] orbit has period two
+  periods: {0.62: 2, 0.69: 4, 0.705: 8, 0.7085: 16}
+    [PASS] cascade 2, 4, 8, 16
+
+Example 8.3 (Theorem 6.3)
+  hNS = 0.78062, hF = 2.56902, lambda = -0.8213+0.5704j, |lambda| = 1.000000, theta0 = 2.5345, T^2/D = 3.6427, l_NS = -10.326
+    [PASS] hNS < hF
+    [PASS] |lambda| = 1
+    [PASS] non-resonance: T^2/D differs from 2 and 3
+    [PASS] l_NS < 0 (supercritical) and matches the paper (-10.326)
+  h = hNS -0.01: distance of the attractor from E4 in [0.0000, 0.0000]
+    [PASS] converges to E4 before hNS
+  h = hNS +0.01: distance of the attractor from E4 in [0.0492, 0.1020]
+    [PASS] invariant closed curve around E4 after hNS
+  h = hNS +0.03: distance of the attractor from E4 in [0.0999, 0.1562]
+    [PASS] invariant closed curve around E4 after hNS
+  periods after locking: {0.82: 5, 0.86: 10, 0.865: 20}
+    [PASS] period 5, 10, 20
+
+Remark 9: hNS = 0.3272 < hF = 0.9239, l_NS = 1.04e-03
+    [PASS] subcritical case: l_NS > 0
+
+Summary: 21 checks passed, 0 failed.
