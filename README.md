@@ -3,9 +3,9 @@
 This repository contains the Wolfram Mathematica and Python code behind every computation,
 numerical example and figure in the manuscript
 
-> **F. Ahmad, M. K. Jamil** — *Stability, bifurcation and chaos control of a discrete-time
-> three-species commensalism–amensalism model with Beddington–DeAngelis functional response*
-> (manuscript in preparation; working title).
+> **F. Ahmad, M. K. Jamil** — *Three routes to chaos in a discrete-time commensalism–amensalism
+> system with Beddington–DeAngelis functional response: flip and Neimark–Sacker bifurcations
+> and hybrid control* (manuscript in preparation).
 
 The code is arranged in the same order as the paper, so each section can be checked on its own.
 
